@@ -10,6 +10,8 @@ def test_2(driver):
     time.sleep(6)
     action.send_keys('hi')
 
+    if x == 2:
+        print('ji')
 
 
 
