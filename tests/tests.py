@@ -7,7 +7,7 @@ from test_data import test_data as TD
 def test_2(driver):
     action = Actions(driver)
     driver.get(TD.base_url)
-    time.sleep(6)
+    time.sleep(46)
     action.send_keys('hi')
 
     if x == 2:
@@ -19,6 +19,7 @@ def test_2(driver):
 
 
 
+def test():
 
 
 
