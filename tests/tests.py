@@ -16,8 +16,13 @@ def test_2(driver):
     enter = actions.find_element(TD.enter_btn)
     enter.click()
 
-    code = input('enter code: ')
+    code_box = actions.find_element(TD.enter_code_box)
+    time.sleep(15)
+    actions.send_keys(code_box,code)
 
 
+    something_btn = actions.find_element(TD.enter_code_btn)
+    something_btn.click()
 
-    time.sleep(5)
+    assert driver.current_url == TD.base_url
+
