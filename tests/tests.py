@@ -16,6 +16,8 @@ def test_2(driver):
     enter = actions.find_element(TD.enter_btn)
     enter.click()
 
+    code = input('enter code: ')
+
 
 
     time.sleep(5)
