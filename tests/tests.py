@@ -11,6 +11,7 @@ def test_2(driver):
     account.click()
 
     phone = actions.find_element(TD.phone_number_input)
+    phone.click()
     phone.send_keys(TD.oz_phone)
 
     enter = actions.find_element(TD.enter_btn)
@@ -18,8 +19,7 @@ def test_2(driver):
 
     code_box = actions.find_element(TD.enter_code_box)
     time.sleep(15)
-    actions.send_keys(code_box,code)
-
+    actions.send_keys(code_box,actions.input_text())
 
     something_btn = actions.find_element(TD.enter_code_btn)
     something_btn.click()
