@@ -2,6 +2,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 class Actions:
     def __init__(self,driver):
         self.driver = driver
@@ -28,3 +29,9 @@ class Actions:
             return 'True'
         else:
             return 'False'
+
+    def input_text(self):
+        code = input("Please enter the code: ")
+        return code
+
+
