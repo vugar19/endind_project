@@ -3,6 +3,7 @@ import pytest
 from selenium.webdriver.common.by import By
 from common.actions import Actions
 from test_data import test_data as TD
+
 def test_2(driver):
     actions = Actions(driver)
     driver.get(TD.base_url)
@@ -18,12 +19,10 @@ def test_2(driver):
     enter.click()
 
     code_box = actions.find_element(TD.enter_code_box)
-    time.sleep(15)
     actions.send_keys(code_box,actions.input_text())
+    time.sleep(15)
 
     something_btn = actions.find_element(TD.enter_code_btn)
     something_btn.click()
 
     assert driver.current_url == TD.base_url
-
-def test_3_vugar():
