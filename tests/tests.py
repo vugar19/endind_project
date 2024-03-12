@@ -26,3 +26,4 @@ def test_2(driver):
 
     assert driver.current_url == TD.base_url
 
+def test_3_vugar():
