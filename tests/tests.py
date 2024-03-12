@@ -26,3 +26,5 @@ def test_2(driver):
     something_btn.click()
 
     assert driver.current_url == TD.base_url
+
+
