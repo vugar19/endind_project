@@ -5,12 +5,13 @@ login_btn = (By.XPATH,'//a[contains(text(),"התחברות")]')
 phone_number_input = (By.XPATH,'//*[@id="root"]/main/div/div[2]/div/form/input')
 enter_btn = (By.XPATH,'//*[@id="root"]/main/div/div[2]/div/form/button')
 
-oz_phone = '0525232330'
+oz_phone = '0552603210'
 
 enter_code_box = (By.XPATH,'//body/div[@id="root"]/main[1]/div[1]/div[2]/div[1]/form[1]/input[1]')
 
 enter_code_btn = (By.XPATH,"//body/div[@id='root']/main[1]/div[1]/div[2]/div[1]/form[1]/button[1]")
 
+payment_page_url = 'https://portal-dev.safsarglobal.link/order-summary/180/payment/3143889120'
 
 event_ticket = "d"
 buy_btn = "ws"
