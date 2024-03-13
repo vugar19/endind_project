@@ -125,37 +125,34 @@ def test_for_loop2(driver):
     sport_options.click()
     time.sleep(3)
 
-    processed_events = set()  # Set to track processed events
+    processed_events = set()
 
     event_links = driver.find_elements(By.XPATH, "//a[contains(@href, '/event/')]")
-
+    ticket_found = False
     for link in event_links:
-        event_number = link.get_attribute("href").split("/event/")[-1]  # Extract event number from URL
+        time.sleep(2)
+        event_number = link.get_attribute("href").split("/event/")[-1]
         if event_number in processed_events:
             print(f"Event {event_number} has already been processed. Skipping...")
             continue
-
         link.click()
         time.sleep(3)
         try:
             purple_btn = driver.find_elements(By.XPATH, "//button[text()='לרכישה']")
             if purple_btn:
+                ticket_found = True
                 purple_btn[0].click()
                 driver.implicitly_wait(4)
-                break  # Exit loop after clicking button (adjust if needed)
+                break
             else:
                 print('No available tickets for sale in this event')
-        except StaleElementReferenceException:
+                processed_events.add(event_number)
+                driver.back()
+                driver.implicitly_wait(4)
+                print(processed_events)
+        except Exception:
             print('StaleElementReferenceException occurred. Retrying...')
             pass
-
-        # Mark event as processed
-        processed_events.add(event_number)
-
-        # Navigate back to the previous page
-        driver.back()
-        time.sleep(3)
-
     if not ticket_found:
         print('No tickets for sale in any event')
 
