@@ -18,8 +18,6 @@ def test_login(driver):
     enter = actions.find_element(TD.enter_btn)
     enter.click()
 
-    code_box = actions.find_element(TD.enter_code_box)
-    actions.input_text(code_box)
     time.sleep(15)
 
     something_btn = actions.find_element(TD.enter_code_btn)
