@@ -23,32 +23,7 @@ def test_cancel_purchase(driver,type_of_btn,result):
     assert driver.current_url == result
 
 
-#
-#
-# @pytest.mark.parametrize('payment_option_path, inner_text',
-#     ['//*[@a "google"]','google'],
-#     ['//*[@a "paypal"]','paypal'],
-#     ['//*[@a "apple pay"]','apple pay'],
-#     ['//*[@a "credit"]','credit'])
-# def test_payment_options(driver,payment_option_path,inner_text):
-#     actions = Actions(driver)
-#     driver.get(TD.base_url)
-#
-#     event_ticket = actions.find_element(TD.event_ticket)
-#     event_ticket.click()
-#
-#     buy_btn = actions.find_element(TD.buy_btn)
-#     buy_btn.click()
-#
-#     pop_up_otp = actions.find_element(TD.pop_up_otp)
-#     actions.input_text(pop_up_otp)
-#
-#     pop_up_otp_accept_btn = actions.find_element(TD.pop_up_otp_accept_btn)
-#     pop_up_otp_accept_btn.click()
-#
-#     payment_option = actions.find_element(payment_option_path)
-#     payment_option_text = payment_option.get_attribute('innerText')
-#     assert payment_option_text == inner_text
+
 @pytest.mark.skip
 def test_for_loop2(driver):
     actions = Actions(driver)
