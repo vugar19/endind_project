@@ -5,7 +5,7 @@ from common.actions import Actions
 from test_data import test_data as TD
 
 
-def test_for_loop2(driver):
+def test_delete_pending_tickets(driver):
     actions = Actions(driver)
     driver.get(TD.base_url)
 
