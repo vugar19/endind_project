@@ -35,3 +35,8 @@ logo =  (By.XPATH,"//*[@class='hidden md:flex space-x-10 md:w-[500px]']")
 picture = (By.CLASS_NAME,'py-4')
 
 
+noam_phone = '0502320277'
+my_account = '//*[@id="root"]/div[1]/div/nav/div[1]/ul/button'
+tickets = '//*[@id="root"]/main/div[2]/div[1]/div[3]/div/div[1]/div[1]/div/div[2]'
+trash_ticket = ''
+delete_confirmation_button = ''
