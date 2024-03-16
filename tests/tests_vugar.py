@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from time import sleep
 def test_1(driver):
     action = Actions(driver)
-    driver.get('https://portal-dev.safsarglobal.link/')
+
     home = (By.XPATH,'//*[@id="root"]/div[1]/div/nav/div[1]/ul/a')
     home_btn = action.find_element(home)
     home_btn.click()
@@ -12,7 +12,6 @@ def test_1(driver):
 def test_2(driver):
     #valid test all fields filled correctly
     action = Actions(driver)
-    driver.get('https://portal-dev.safsarglobal.link/')
 
     card_number = (By.XPATH,'//*[@id="cardNumber"]')
     card_number_field= action.find_element(card_number)
@@ -47,7 +46,6 @@ def test_2(driver):
 def test_3(driver):
         #invalid test credit card number with letters
         action = Actions(driver)
-        driver.get('https://portal-dev.safsarglobal.link/')
 
         card_number = (By.XPATH, '//*[@id="cardNumber"]')
         card_number_field = action.find_element(card_number)
@@ -61,8 +59,6 @@ def test_3(driver):
     def test_4(driver):
         # invalid test credit card number with letters
         action = Actions(driver)
-        driver.get('https://portal-dev.safsarglobal.link/')
-
         cvv_number = (By.XPATH, '//*[@id="payment_section_2"]/div[3]/div[1]')
         cvv_number_field = action.find_element(cvv_number)
         cvv_number_field.send_keys('a12')
@@ -74,7 +70,6 @@ def test_3(driver):
 
     def test_5(driver):
     action = Actions(driver)
-    driver.get('https://portal-dev.safsarglobal.link/')
     card_number_desc = (By.XPATH, '//*[@id="cardNumber"]')
     find_card_number_desc = action.find_element(card_number_desc)
     validate_card_desc = find_card_number_desc.get_attribute('place holder')

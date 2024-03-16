@@ -5,7 +5,8 @@ login_btn = (By.XPATH,'//a[contains(text(),"התחברות")]')
 phone_number_input = (By.XPATH,'//*[@id="root"]/main/div/div[2]/div/form/input')
 enter_btn = (By.XPATH,'//*[@id="root"]/main/div/div[2]/div/form/button')
 
-oz_phone = '0502587365'
+phone = '0552603210'
+ticket_buying_page = 'https://portal-dev.safsarglobal.link/order-summary/148/confirmation/9541943373'
 
 enter_code_box = (By.XPATH,'//body/div[@id="root"]/main[1]/div[1]/div[2]/div[1]/form[1]/input[1]')
 
@@ -13,14 +14,12 @@ enter_code_btn = (By.XPATH,"//body/div[@id='root']/main[1]/div[1]/div[2]/div[1]/
 
 payment_page_url = 'https://portal-dev.safsarglobal.link/order-summary/180/payment/3143889120'
 
-event_ticket = "d"
+ticket_caneling_main_btn = (By.XPATH,'//*[@id="root"]/main/div[2]/div[2]/div/div/div[1]/p[1]/span')
 buy_btn = "ws"
-pop_up_otp = "s"
-pop_up_otp_accept_btn = 'ssk'
-cancel_purchase_btn = 'aaaa'
-approve_cancel_purchase_btn = "aa"
-approve_continue_purchase_btn = "aa"
-continue_purchase_btn = "ff"
+
+cancel_purchase_btn = (By.XPATH,'//*[@id="root"]/main/div[2]/div[2]/div/div/div[1]/div[2]/div[2]/button[2]')
+
+continue_purchase_btn = (By.XPATH,'//*[@id="root"]/main/div[2]/div[2]/div/div/div[1]/div[2]/div[2]/button[1]')
 
 categories = (By.XPATH,"//body/div[@id='root']/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]/a[5]")
 location = (By.XPATH,"//div[@id='rc-tabs-0-tab-tab4']")
