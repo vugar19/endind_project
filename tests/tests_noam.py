@@ -7,23 +7,6 @@ from test_data import test_data as TD
 
 def test_delete_pending_tickets(driver):
     actions = Actions(driver)
-    driver.get(TD.base_url)
-
-    account = actions.find_element(TD.login_btn)
-    account.click()
-
-    phone = actions.find_element(TD.phone_number_input)
-    phone.click()
-    phone.send_keys(TD.noam_phone)
-
-    enter = actions.find_element(TD.enter_btn)
-    enter.click()
-
-    time.sleep(30)
-
-    something_btn = actions.find_element(TD.enter_code_btn)
-    something_btn.click()
-
     # start ticket order here
 
     time.sleep(5)

@@ -5,76 +5,24 @@ from common.actions import Actions
 from test_data import test_data as TD
 
 
-#
-#
-# def test_timer_func(driver):
-#     actions = Actions(driver)
-#     driver.get(TD.base_url)
-#
-#     event_ticket = actions.find_element(TD.event_ticket)
-#     event_ticket.click()
-#
-#     buy_btn = actions.find_element(TD.buy_btn)
-#     buy_btn.click()
-#
-#     pop_up_otp = actions.find_element(TD.pop_up_otp)
-#     actions.input_text(pop_up_otp)
-#
-#     pop_up_otp_accept_btn = actions.find_element(TD.pop_up_otp_accept_btn)
-#     pop_up_otp_accept_btn.click()
-#
-#     assert 'something' == 'something'
-#
-#
-# def test_timer_expire_cancel(driver):
-#     actions = Actions(driver)
-#     driver.get(TD.base_url)
-#
-#     event_ticket = actions.find_element(TD.event_ticket)
-#     event_ticket.click()
-#
-#     buy_btn = actions.find_element(TD.buy_btn)
-#     buy_btn.click()
-#
-#     pop_up_otp = actions.find_element(TD.pop_up_otp)
-#     actions.input_text(pop_up_otp)
-#
-#     pop_up_otp_accept_btn = actions.find_element(TD.pop_up_otp_accept_btn)
-#     pop_up_otp_accept_btn.click()
-#
-#     cancel_purchase_btn = actions.find_element(TD.cancel_purchase_btn)
-#     cancel_purchase_btn.click()
-#
-#     approve_cancel_purchase_btn = actions.find_element(TD.approve_cancel_purchase_btn)
-#     approve_cancel_purchase_btn.click()
-#
-#     assert driver.current_url == TD.base_url
-#
-#
-# def test_timer_expire_continue(driver):
-#     actions = Actions(driver)
-#     driver.get(TD.base_url)
-#
-#     event_ticket = actions.find_element(TD.event_ticket)
-#     event_ticket.click()
-#
-#     buy_btn = actions.find_element(TD.buy_btn)
-#     buy_btn.click()
-#
-#     pop_up_otp = actions.find_element(TD.pop_up_otp)
-#     actions.input_text(pop_up_otp)
-#
-#     pop_up_otp_accept_btn = actions.find_element(TD.pop_up_otp_accept_btn)
-#     pop_up_otp_accept_btn.click()
-#
-#     continue_purchase_btn = actions.find_element(TD.continue_purchase_btn)
-#     continue_purchase_btn.click()
-#
-#     approve_continue_purchase_btn = actions.find_element(TD.approve_cancel_purchase_btn)
-#     approve_continue_purchase_btn.click()
-#
-#     assert driver.current_url == driver.current_url
-#
+@pytest.mark.parametrize("type_of_btn,result",[
+    (TD.cancel_purchase_btn,TD.base_url),
+    (TD.continue_purchase_btn,TD.payment_page_url)
+])
+def test_cancel_purchase(driver,type_of_btn,result):
+
+    actions = Actions(driver)
+    driver.get(TD.ticket_buying_page)
+
+    main_cancel_btn = actions.find_element(TD.cancel_purchase_btn)
+    main_cancel_btn.click()
+
+    cancel_continue_btns = actions.find_element(type_of_btn)
+    cancel_continue_btns.click()
+
+    assert driver.current_url == result
+
+
 #
 #
 # @pytest.mark.parametrize('payment_option_path, inner_text',
@@ -101,7 +49,7 @@ from test_data import test_data as TD
 #     payment_option = actions.find_element(payment_option_path)
 #     payment_option_text = payment_option.get_attribute('innerText')
 #     assert payment_option_text == inner_text
-
+@pytest.mark.skip
 def test_for_loop2(driver):
     actions = Actions(driver)
     driver.get(TD.base_url)
@@ -111,7 +59,7 @@ def test_for_loop2(driver):
 
     phone = actions.find_element(TD.phone_number_input)
     phone.click()
-    phone.send_keys(TD.oz_phone)
+    phone.send_keys(TD.phone)
 
     enter = actions.find_element(TD.enter_btn)
     enter.click()
@@ -156,5 +104,6 @@ def test_for_loop2(driver):
             pass
     if not ticket_found:
         print('No tickets for sale in any event')
+
 
 

@@ -56,19 +56,19 @@ def test_3(driver):
         expected = "Invalid Card Number"
         assert expected == validate_error_msg
 
-    def test_4(driver):
-        # invalid test credit card number with letters
-        action = Actions(driver)
-        cvv_number = (By.XPATH, '//*[@id="payment_section_2"]/div[3]/div[1]')
-        cvv_number_field = action.find_element(cvv_number)
-        cvv_number_field.send_keys('a12')
-        error_massge_cvv_number = (By.XPATH, '//*[@id="payment_section_2"]/div[3]/div[2]')
-        find_error_masssge_cvv_number= action.find_element(error_massge_cvv_number)
-        validate_error_msg2 = find_error_masssge_cvv_number.get_attribute('innerText')
-        expected = "Invalid CVV"
-        assert expected == validate_error_msg2
+def test_credit_card_number(driver):
+    # invalid test credit card number with letters
+    action = Actions(driver)
+    cvv_number = (By.XPATH, '//*[@id="payment_section_2"]/div[3]/div[1]')
+    cvv_number_field = action.find_element(cvv_number)
+    cvv_number_field.send_keys('a12')
+    error_massge_cvv_number = (By.XPATH, '//*[@id="payment_section_2"]/div[3]/div[2]')
+    find_error_masssge_cvv_number= action.find_element(error_massge_cvv_number)
+    validate_error_msg2 = find_error_masssge_cvv_number.get_attribute('innerText')
+    expected = "Invalid CVV"
+    assert expected == validate_error_msg2
 
-    def test_5(driver):
+def test_5(driver):
     action = Actions(driver)
     card_number_desc = (By.XPATH, '//*[@id="cardNumber"]')
     find_card_number_desc = action.find_element(card_number_desc)
