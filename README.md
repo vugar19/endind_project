@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/vugar19/endind_project">
-    <img src="Images/default-logo-671af5ae.svg" alt="Logo" width="500" height="500">
+    <img src="Images/default-logo-671af5ae.svg" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">Final Project: Safsar X</h3>
