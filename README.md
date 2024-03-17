@@ -20,14 +20,8 @@
   <p align="center">
     By Jessica, Oz, Vugar, Noam, & Sandra
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/vugar19/endind_project"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </div>
 
@@ -72,7 +66,7 @@ The Planning and distribution of tasks between team members was as follows:
 * Noam - responsible for ticket reservation
 * Sandra - responsible for purchase success screen and receipt
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+The rest of the Description
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
