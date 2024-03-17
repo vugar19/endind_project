@@ -8,12 +8,11 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<p align="center"> 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-</p>
+
 
 
 
@@ -148,6 +147,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
+<div style="text-align: center;" markdown="1">
 [contributors-shield]: https://img.shields.io/github/contributors/vugar19/endind_project.svg?style=for-the-badge
 [contributors-url]: https://github.com/vugar19/endind_project/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/vugar19/endind_project.svg?style=for-the-badge
@@ -156,4 +156,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-url]: https://github.com/vugar19/endind_project/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew\
-
+</div>
