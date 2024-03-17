@@ -1,6 +1,7 @@
 from common.actions import Actions
 from selenium.webdriver.common.by import By
 from time import sleep
+
 def test_1(driver):
     action = Actions(driver)
 
