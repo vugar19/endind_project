@@ -146,11 +146,11 @@ Use this space to list resources you find helpful and would like to give credit 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/vugar19/endind_project
+[contributors-shield]: https://img.shields.io/github/contributors/vugar19/endind_project.svg?style=for-the-badge
 [contributors-url]: https://github.com/vugar19/endind_project/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/vugar19/endind_project
+[forks-shield]: https://img.shields.io/github/forks/vugar19/endind_project.svg?style=for-the-badge
 [forks-url]: https://github.com/vugar19/endind_project/network/members
-[issues-shield]: https://img.shields.io/github/issues/vugar19/endind_project
+[issues-shield]: https://img.shields.io/github/issues/vugar19/endind_project.svg?style=for-the-badge
 [issues-url]: https://github.com/vugar19/endind_project/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew\
