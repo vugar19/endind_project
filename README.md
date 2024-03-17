@@ -66,11 +66,11 @@
 This project tests a ticket buying and selling platform named Safsar X, focusing on its purchase area.
 
 The Planning and distribution of tasks between team members was as follows:
-*Jessica - responsible for payment phase part 1
-*Vugar - responsible for payment phase part 2
-*Oz - Team manager, responsible for purchase cancellation
-*Noam - responsible for ticket reservation
-*Sandra - responsible for purchase success screen and receipt
+* Jessica - responsible for payment phase part 1
+* Vugar - responsible for payment phase part 2
+* Oz - Team manager, responsible for purchase cancellation
+* Noam - responsible for ticket reservation
+* Sandra - responsible for purchase success screen and receipt
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
